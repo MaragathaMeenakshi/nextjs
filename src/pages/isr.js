@@ -18,3 +18,4 @@ const IncrementStaticGeneration = () => {
         </>
     )
 }
+export default IncrementStaticGeneration;
