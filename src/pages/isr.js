@@ -31,4 +31,3 @@ const IncrementStaticGeneration = ({ user }) => {
         </>
     )
 }
-export default IncrementStaticGeneration;
