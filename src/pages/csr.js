@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function ClientSideRendering() {
     const [state, setState] = useState([]);
     async function getData() {
-        const res = await fetch("http://localhost:3000/api/user", {
+        const res = await fetch(process.env.client+ '/api/user', {
             method: "GET"
         })
         const data = await res.json();
