@@ -24,13 +24,23 @@ export default function Dashboard() {
     }
 
     return (<>
-        <Grid container
+       <Grid container
             direction="row"
             spacing={2}>
             <Grid item xs={6}><Typography>{(auth.currentUser) ? <>Hello {auth.currentUser.email}</> : <>Please login first!</>}</Typography></Grid>
-            <Grid item xs={2}><Button variant="contained" href="/auth/login" >Login</Button></Grid>
-            <Grid item xs={4}><Button variant="outlined" onClick={handleChange}>Log Out</Button>
+
+        </Grid>
+        <Grid container
+            direction="row"
+            spacing={1}>
+            <Grid item ><Button variant="outlined" onClick={handleChange}>Log Out</Button>
             </Grid>
+            <Grid item ><Button variant="outlined" href="/auth/login">Login</Button></Grid>
+            <Grid item><Button variant="outlined" href="/csr">Client Side Rendering</Button></Grid>
+            <Grid item ><Button variant="outlined" href="/ssr">Server Side Rendering </Button></Grid>
+            <Grid item ><Button variant="outlined" href="/ssg">Static side Generation</Button></Grid>
+            <Grid item ><Button variant="outlined" href="/isr">Increment Static Generation</Button></Grid>
+            <Grid item ><Button variant="outlined" href="/api/user">User Data</Button></Grid>
         </Grid>
     </>)
 }
