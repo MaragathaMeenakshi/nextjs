@@ -1,5 +1,5 @@
 export async function getStaticProps() {
-    const response = await fetch('process.env.client', {
+    const response = await fetch(process.env.client+ '/api/user', {
         method: "GET"
     })
     const data = await response.json();
