@@ -1,0 +1,13 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/auth/login", "dest": "/login" }
+    { "src": "/form", "dest": "/form" }
+    { "src": "/auth/register", "dest": "/register" }
+    { "src": "/isr", "dest": "/isr" }
+    { "src": "/csr", "dest": "/csr" }
+        { "src": "/ssg", "dest": "/ssg" }
+        { "src": "/ssr", "dest": "/ssr" }
+
+  ]
+}
