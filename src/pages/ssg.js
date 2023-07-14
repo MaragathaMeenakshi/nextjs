@@ -1,6 +1,6 @@
 import { ListItem, ListItemText } from "@mui/material"
 export async function getStaticProps() {
-    const response = await fetch(process.env.client+ '/api/user', {
+    const response = await fetch('https://vv-htvavx3vd-maragathameenakshi.vercel.app/api/user', {
         method: "GET"
     })
     const data = await response.json();
