@@ -22,17 +22,13 @@ export default function Dashboard() {
             console.log(error)
         })
     }
-    const router= useRouter();
-    
-    const handleRoute=()=>{
-        router.push('/auth/login');
-    }
+
     return (<>
         <Grid container
             direction="row"
             spacing={2}>
             <Grid item xs={6}><Typography>{(auth.currentUser) ? <>Hello {auth.currentUser.email}</> : <>Please login first!</>}</Typography></Grid>
-            <Grid item xs={2}><Button variant="contained" onCLick={handleRoute}>Login</Button></Grid>
+            <Grid item xs={2}><Button variant="contained" href="/auth/login" >Login</Button></Grid>
             <Grid item xs={4}><Button variant="outlined" onClick={handleChange}>Log Out</Button>
             </Grid>
         </Grid>
